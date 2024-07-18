@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas com JQ</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <img src="https://estudareaprender.com/wp-content/uploads/listas-de-tarefas-significado-1024x576.jpeg">
+    </header>
+    <div class="container">
+        
+        <form>
+            <h2>Adicione Tarefas</h2>
+            <div class="input-container">
+                <input type="text" id="adicionar-tarefas" required placeholder="Adicione uma tarefa">
+                <button type="submit" class="botao-adicionar">Adicionar</button>
+                <button type="reset" id="limpar-tarefa" class="clear-task">Limpar Tarefas</button>
+            </div>
+        </form>
+    
+        <div class="task-card">
+            <h3>Listagem das Tarefas</h3>
+            <ul id="ul-task">
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
